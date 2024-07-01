@@ -132,14 +132,14 @@ just_hello = my_string[0:5] # this will read from the start to the 4th index pos
 just_will = my_string[6:10] # This will read from the 6th index to the last index position (notice it is one number larger than the string itself)
 
 # use a negative number to work backwards in a string (-1 is the last element of the string)
-using_negative_index = my_string[0:-1] # this will be "Hello Eri" because it goes up to and excludes the last index
+using_negative_index = my_string[0:-1] # this will be "Hello Wil" because it goes up to and excludes the last index
 
 # You can use a 3rd position to designate the increment steps (every other character, every third, etc)
 every_other_letter = my_string[0::2] # this starts with the first character and appends every other letter after it
 
 # you can also work backwards with the increment
 
-reversed_letters = my_word[::-1]
+reversed_letters = my_string[::-1]
 
 # be careful you remember that the length of the string is not the same as the number of index positions
 print(len(my_string)) # this is 10
