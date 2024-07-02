@@ -969,8 +969,9 @@ def login():
 # you can also use your routes to affect stored data (think a database) and return data that you want
 @app.route("/count", methods=["PATCH"])
 def add_count():
-    main.count = main.count + 1  # this route adds one to the count variable we set up at the start
-    return f"The count is now {main.count}"  # we can then see how many times we have called the route
+    global count  # this route adds one to the count variable we set up at the start
+    count +=1 # this route adds one to the count variable we set up at the start
+    return f"The count is now {count}" # we can then see how many times we have called the route
 
 
 # you can use query parameters to filter the data you access
