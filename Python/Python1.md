@@ -703,12 +703,14 @@ C:\> <venv_path>\Scripts\activate.bat
 ```
 Once you have activated the venv any pip installs will be installed here instead of your local site-packages folder. Here is an example of downloading a joke generator and using it (it assumes you have created and started the virtual enviornment):
 ```cli
-pip install joke-generator
+pip install Joking
 ```
 ```python
-from joke_generator import generate
+import Joking
 
-print(generate()) # will print a joke
+x=Joking.random_dad_joke()
+print(x)
+ # will print a joke
 ```
 final note: depending on the ide you use, it may not recognize your pip installations. In those cases you just need to make sure your spelling is correct, because it will not provide you with intelisense
 
