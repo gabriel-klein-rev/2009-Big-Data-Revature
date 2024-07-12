@@ -156,3 +156,22 @@
 
     1.  Create, Read, Update, Delete. The most basic operations that can
         be performed in SQL
+
+28. What is normalization?
+
+    1. Database normalization is the process of restructuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity
+    
+
+29. What are the normal forms up to 3NF?
+    1. 1NF
+        - Each table cell should contain a single value
+        - Each record should be unique
+    
+    2. 2NF
+        - Be in 1NF
+        - Has no partial dependency. That is, all non-key attributes are fully dependent on a primary key.
+
+    3. 3NF
+    	- Be in 2NF
+	    - Have no transitive partial dependencies
+
