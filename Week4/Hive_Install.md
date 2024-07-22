@@ -21,7 +21,7 @@ vim ~/.bashrc
 Append the following lines to the bottom of the file:
 
 ```
-export HIVE_HOME="~/apache-hive-3.1.3-bin"
+export HIVE_HOME=~/apache-hive-3.1.3-bin
 export PATH=$PATH:$HIVE_HOME/bin
 ```
 
@@ -88,6 +88,8 @@ On line 460, edit the value of the property to look like this (you can use a sea
         <description>location of default database for the warehouse</description>
     </property>
 ```
+
+Search for "&#8" in the hive-site.xml file and remove those characters.
 
 ## 6) Install MySQL
 ```
