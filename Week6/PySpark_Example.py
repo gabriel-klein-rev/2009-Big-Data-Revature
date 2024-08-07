@@ -2,7 +2,7 @@ from pyspark import SparkContext, SparkConf
 
 conf = SparkConf().setAppName("Example1").setMaster("local")
 
-sc = SparkContext(conf=conf)
+sc = SparkContext(conf=conf).setLogLevel("WARN")
 
 rdd = sc.parallelize([1, 2, 3, 4, 5])
 
