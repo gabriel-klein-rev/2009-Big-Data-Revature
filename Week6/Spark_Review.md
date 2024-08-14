@@ -26,10 +26,10 @@ Hive is more suited for batch processing with large amounts of data. It is not g
 
 ## SparkSession vs SparkContext?
 
-SparkSession
+SparkContext
     - 	Spark SparkContext is an entry point to Spark and defined in org.apache.spark package since 1.x and used to programmatically create Spark RDD, accumulators and broadcast variables on the cluster. Since Spark 2.0 most of the functionalities (methods) available in SparkContext are also available in SparkSession. Its object sc is default available in spark-shell and it can be programmatically created using SparkContext class.
 
-SparkContext
+SparkSession
     -	SparkSession introduced in version 2.0 and and is an entry point to underlying Spark functionality in order to programmatically create Spark RDD, DataFrame and DataSet. It’s object ‘spark’ is default available in spark-shell and it can be created programmatically using SparkSession builder pattern.
 
 
